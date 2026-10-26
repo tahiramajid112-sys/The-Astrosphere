@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test My Skills - The Astrosphere</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+        <nav class="sidebar close">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img src="/static/space.png" alt="Logo" class="custom-icon logo-icon-img">
+        </span>
+        <div class="text logo-text">
+          <span class="name">The Astrosphere</span>
+        </div>
+      </div>
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="index.html">
+              <img src="/static/home.png" alt="Home" class="custom-icon">
+              <span class="text nav-text">Home</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="planets.html">
+              <img src="/static/planet.png" alt="Planets" class="custom-icon">
+              <span class="text nav-text">Planets</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="galaxies.html">
+              <img src="galaxy.png" alt="Galaxies" class="custom-icon">
+              <span class="text nav-text">Galaxies</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="exo.html">
+              <img src="/static/exoplanet.png" alt="Exoplanets" class="custom-icon">
+              <span class="text nav-text">Exoplanets</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="blackholes.html">
+              <img src="/static/blackhole.png" alt="Black Holes" class="custom-icon">
+              <span class="text nav-text">Black Holes</span>
+            </a>
+          </li>
+          <li class="nav-link">
+          <a href="quiz.html">
+            <img src="/static/quiz.png" alt="Quiz" class="custom-icon">
+            <span class="text nav-text">Test My Skills</span>
+          </a>
+        </li>
+        
+        <li class="nav-link">
+            <a href="system.html">
+              <img src="/static/solar-system.png" alt="Solar System" class="custom-icon">
+              <span class="text nav-text">3D Solar System</span>
+            </a>
+          </li>
+        <li class="nav-link">
+            <a href="galaxy3d.html">
+              <img src="/static/galaxies.png" alt="Solar System" class="custom-icon">
+              <span class="text nav-text">3D Galaxies</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <canvas id="starfield"></canvas>
+
+  <section id="quiz-screen" class="page active">
+    <h1>Cosmic Knowledge Test</h1>
+    
+    <div id="quiz-container" class="quiz-box">
+      <div class="quiz-header">
+        <span id="question-tracker">Question 1 / 5</span>
+        <span id="score-tracker">Score: 0</span>
+      </div>
+      <h2 id="question-text">Loading question...</h2>
+      
+      <div id="answer-buttons" class="btn-grid">
+        </div>
+      
+      <button id="next-btn" class="next-btn hidden">Next Question</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

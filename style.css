@@ -1,0 +1,625 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000010;
+  color: #eee;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Starfield canvas */
+#starfield {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background: transparent;
+}
+
+/* Page Navigation System */
+.page {
+  display: none; /* Hidden by default */
+  width: 100%;
+  max-width: 1200px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 0.5s ease;
+}
+
+.page.active {
+  display: flex; /* Only show active page */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Welcome Screen Styles */
+.main-title {
+  font-size: 3.5rem;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #96d1ff;
+  text-shadow: 0 0 15px #80bfff;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 50px;
+  color: #ccddee;
+}
+
+.section-subtitle {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-buttons button {
+  padding: 15px 35px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: rgba(17, 26, 48, 0.8);
+  border: 2px solid #3377ff;
+  color: #aaccff;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #224477cc;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background: #3377ff;
+  color: #fff;
+  box-shadow: 0 0 20px #5599ff;
+  transform: translateY(-5px);
+}
+
+/* --- FIXED HOME BUTTON STYLES --- */
+.home-btn {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 20px; /* Pushes it down from the top edge */
+  margin-bottom: 20px; /* Pushes the <h1> down below it */
+  background: transparent;
+  border: 1px solid #5599ff;
+  color: #96d1ff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none; /* Removes the standard link underline */
+  font-size: 1rem;
+}
+
+.home-btn:hover {
+  background: rgba(85, 153, 255, 0.2);
+}
+
+.home-btn:hover {
+  background: rgba(85, 153, 255, 0.2);
+}
+
+.coming-soon {
+  font-size: 1.5rem;
+  color: #77aaff;
+  margin-top: 50px;
+}
+
+/* Galaxy screen and gallery styling */
+h1 {
+  margin-bottom: 20px;
+  color: #96d1ff;
+  text-shadow: 0 0 8px #80bfff;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  top: 20px;
+}
+
+.galaxy-card {
+  background: radial-gradient(circle at center, #111a30, #000010);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0 10px #224477cc;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 280px;
+}
+
+.galaxy-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #5599ffcc;
+}
+
+.galaxy-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #222;
+}
+
+.galaxy-card .name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 10px 0 0 0;
+  color: #aaccff;
+  height: 40px;
+  text-align: center;
+  line-height: 1.2;
+  overflow: hidden;
+}
+
+/* Modal styles */
+#modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 20, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 10000;
+}
+
+#modal.active {
+  display: flex;
+}
+
+#modal-content {
+  background: linear-gradient(135deg, #001122, #000011);
+  border-radius: 16px;
+  max-width: 700px;
+  width: 100%;
+  color: #ccddee;
+  box-shadow: 0 0 25px #3377ff;
+  padding: 20px;
+  position: relative;
+}
+
+#modal-content img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+#modal-content h2 {
+  margin-top: 0;
+  color: #77aaff;
+  text-shadow: 0 0 6px #5599ff;
+}
+
+#modal-content p {
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+#back-button {
+  background-color: #3366cc;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 8px #5599ff;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+#back-button:hover {
+  background-color: #224499;
+}
+
+@media (max-width: 600px) {
+  .galaxy-card img {
+    height: 140px;
+  }
+  #modal-content {
+    padding: 15px;
+  }
+  .main-title {
+    font-size: 2.5rem;
+  }
+}
+/* --- SIDEBAR STYLES --- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background: rgba(8, 12, 25, 0.95); /* Dark translucent background */
+  border-right: 1px solid #224477;
+  padding: 10px 14px;
+  transition: width 0.3s ease;
+  z-index: 100;
+  backdrop-filter: blur(5px);
+}
+
+.sidebar.close {
+  width: 80px;
+}
+
+/* Make sure main content doesn't hide behind the sidebar */
+/* Page Navigation System */
+.page {
+  display: none; /* Hidden by default */
+  width: 100%;
+  max-width: 1200px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 0.5s ease;
+  /* We removed the static padding-left from here */
+}
+
+.page.active {
+  display: flex; /* Only show active page */
+}
+
+/* --- DYNAMIC PADDING FOR SIDEBAR --- */
+
+/* 1. When the sidebar is OPEN (width is 250px) */
+.sidebar ~ .page {
+  padding-left: 270px; /* 250px for the sidebar + 20px spacing */
+  transition: padding-left 0.3s ease; /* Makes the content slide smoothly */
+}
+
+/* 2. When the sidebar is CLOSED (width is 80px) */
+.sidebar.close ~ .page {
+  padding-left: 100px; /* 80px for the closed sidebar + 20px spacing */
+}
+
+.sidebar .text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ccddee;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  opacity: 1;
+}
+
+.sidebar.close .text {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar header .image-text {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .logo-icon {
+  font-size: 30px;
+  color: #96d1ff;
+  min-width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar header .toggle {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+  height: 25px;
+  width: 25px;
+  background: #3377ff;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.sidebar.close .toggle {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.sidebar .menu {
+  margin-top: 30px;
+}
+
+.sidebar li {
+  height: 50px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.sidebar li .icon {
+  min-width: 50px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #96d1ff;
+}
+
+.sidebar li a {
+  list-style: none;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sidebar li a:hover {
+  background-color: #3377ff;
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text {
+  color: #fff;
+}
+
+ul.menu-links {
+  padding-left: 0;
+}
+
+/* --- CUSTOM IMAGE ICON STYLES --- */
+
+.sidebar .custom-icon {
+  width: 26px; /* Adjust this to make your icons larger or smaller */
+  height: 26px;
+  min-width: 50px; /* This keeps the spacing identical to the old layout */
+  object-fit: contain; /* Prevents your images from stretching out of proportion */
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 2px rgba(150, 209, 255, 0.4)); /* Subtle default glow */
+}
+
+/* Slightly larger specific style for the top logo */
+.sidebar .logo-icon-img {
+  width: 34px;
+  height: 34px;
+}
+
+/* Hover effects for the images */
+.sidebar li a:hover .custom-icon {
+  transform: scale(1.15); /* Makes the icon pop out slightly on hover */
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.9)); /* Brightens the glow */
+}
+/* --- TOOLTIP FOR CLOSED SIDEBAR --- */
+
+/* 1. Set the anchor point for the tooltip */
+.sidebar.close .nav-link {
+  position: relative; 
+}
+
+/* 2. Style the hidden text to look like a floating box */
+.sidebar.close .nav-link .nav-text {
+  position: absolute;
+  left: 85px; /* Pushes the text just outside the closed sidebar */
+  background: #080c19; /* Matches your dark space theme */
+  border: 1px solid #3377ff;
+  color: #ccddee;
+  padding: 8px 14px;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(51, 119, 255, 0.4); /* Subtle blue glow */
+  opacity: 0;
+  pointer-events: none; /* Ensures the mouse doesn't get stuck on it */
+  transition: all 0.3s ease;
+  transform: translateX(-10px); /* Starts slightly hidden to the left */
+  z-index: 1000;
+  white-space: nowrap; /* Keeps the text on one line */
+}
+
+/* 3. Make it slide in and appear when hovering over the icon */
+.sidebar.close .nav-link:hover .nav-text {
+  opacity: 1;
+  transform: translateX(0); /* Slides smoothly into place */
+}
+/* --- FOOTER STYLES (Slim Version) --- */
+.site-footer {
+  width: 100%;
+  text-align: center;
+  padding: 8px 0; /* Reduced from 20px to make it thinner */
+  margin-top: auto; 
+  background: rgba(8, 12, 25, 0.9); 
+  border-top: 1px solid #224477;
+  color: #96d1ff;
+  font-size: 0.8rem; /* Slightly smaller font */
+  font-weight: bold;
+  letter-spacing: 2px; 
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(5px);
+}
+
+/* This removes the invisible spacing around the text */
+.site-footer p {
+  margin: 0; 
+  padding: 2px 0;
+}
+
+/* Adjust the footer when the sidebar is open to prevent overlapping */
+.sidebar ~ .site-footer {
+  padding-left: 250px;
+  transition: padding-left 0.3s ease;
+}
+
+.sidebar.close ~ .site-footer {
+  padding-left: 80px;
+}
+
+@media (max-width: 600px) {
+  .sidebar ~ .site-footer,
+  .sidebar.close ~ .site-footer {
+    padding-left: 0;
+  }
+}
+/* --- QUIZ STYLES --- */
+.quiz-box {
+  background: rgba(8, 12, 25, 0.85);
+  border: 1px solid #3377ff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 0 20px rgba(51, 119, 255, 0.2);
+  margin-top: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #224477;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  color: #77aaff;
+  font-weight: bold;
+}
+
+#question-text {
+  color: #ccddee;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.quiz-btn {
+  background: rgba(17, 26, 48, 0.6);
+  border: 1px solid #3377ff;
+  color: #aaccff;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.quiz-btn:hover:not(:disabled) {
+  background: #3377ff;
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.quiz-btn:disabled {
+  cursor: not-allowed;
+}
+
+/* Feedback Colors */
+.quiz-btn.correct {
+  background: rgba(40, 167, 69, 0.2);
+  border-color: #28a745;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+}
+
+.quiz-btn.wrong {
+  background: rgba(220, 53, 69, 0.2);
+  border-color: #dc3545;
+  color: #ffcccc;
+}
+
+.next-btn {
+  margin-top: 30px;
+  background: #3377ff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  background: #2255cc;
+  box-shadow: 0 0 15px #3377ff;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ==========================================
+   MASSIVE WAVY INFINITY ROCKET (Motion Path)
+   ========================================== */
+#roaming-rocket {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  font-size: 2.5rem;
+  z-index: 9999; 
+  pointer-events: none; 
+  filter: drop-shadow(0px 5px 15px rgba(255, 100, 0, 0.9));
+
+  /* 1. THE MASSIVE TRACK: We scaled the math up by 500%! 
+        This draws a massive, perfectly curved Figure-8 across the viewport. */
+  offset-path: path('M 0,0 C 450,-350 800,-150 800,0 C 800,150 450,350 0,0 C -450,-350 -800,-150 -800,0 C -800,150 -450,350 0,0');
+  
+  /* 2. AUTO-STEERING: This magically points the rocket's nose along the curve! */
+  offset-rotate: auto 45deg;
+
+  /* 3. A 15-second loop gives it a smooth, ambient cruising speed */
+  animation: massiveInfinity 15s linear infinite;
+}
+
+/* 4. The Animation simply pushes it along the track */
+@keyframes massiveInfinity {
+  0%   { offset-distance: 0%; }
+  100% { offset-distance: 100%; }
+}

@@ -1,0 +1,323 @@
+{
+  "galaxies": [
+    {
+      "name": "Andromeda Galaxy",
+      "image": "/static/images/galaxy/andromeda_galaxy.png",
+      "designation": "M31, NGC 224",
+      "morphology": "Spiral Galaxy",
+      "distance": "2.537 million light years",
+      "description": "The Andromeda Galaxy is the nearest spiral galaxy to the Milky Way and is on a collision course with it in about 4 billion years."
+    },
+    {
+      "name": "Sombrero Galaxy",
+      "image": "/static/images/galaxy/Sombrero_Galaxy_.jpg",
+      "designation": "M104, NGC 4594",
+      "morphology": "Unbarred Spiral Galaxy",
+      "distance": "31 million light years",
+      "description": "The Sombrero Galaxy is known for its bright nucleus and large central bulge, giving the appearance of a sombrero hat."
+    },
+    {
+      "name": "Whirlpool Galaxy",
+      "image": "/static/images/galaxy/whirpool galaxy.jpg",
+      "designation": "M51A, NGC 5194",
+      "morphology": "Spiral Galaxy",
+      "distance": "23 million light years",
+      "description": "The Whirlpool Galaxy is a classic spiral galaxy interacting with a smaller companion galaxy, producing spectacular spiral arm structures."
+    },
+    {
+      "name": "Pinwheel Galaxy",
+      "image": "/static/images/galaxy/pinwheel galaxy.jpg",
+      "designation": "M101, NGC 5457",
+      "morphology": "Face-on Spiral Galaxy",
+      "distance": "21 million light years",
+      "description": "The Pinwheel Galaxy is well known for its large size and grand design spiral arms visible even in amateur telescopes."
+    },
+    {
+      "name": "Centaurus A",
+      "image": "/static/images/galaxy/centaurus a galaxy.jpg",
+      "designation": "NGC 5128",
+      "morphology": "Lenticular Galaxy",
+      "distance": "12 million light years",
+      "description": "Centaurus A is a peculiar galaxy known for its dust lane and radio emissions."
+    },
+    {
+      "name": "Tadpole Galaxy",
+      "image": "/static/images/galaxy/tadpole galaxy.jpg",
+      "designation": "UGC 10214",
+      "morphology": "Peculiar Galaxy",
+      "distance": "400 million light years",
+      "description": "The Tadpole Galaxy exhibits a long tidal tail from gravitational interactions with other galaxies."
+    },
+    {
+      "name": "Messier 87",
+      "image": "/static/images/galaxy/messier_87_galaxy.jpg",
+      "designation": "M87, NGC 4486",
+      "morphology": "Elliptical Galaxy",
+      "distance": "53.5 million light years",
+      "description": "Messier 87 is a giant elliptical galaxy with a supermassive black hole at its center."
+    },
+    {
+      "name": "NGC 1300",
+      "image": "/static/images/galaxy/ngc 1300 galaxy.jpg",
+      "designation": "NGC 1300",
+      "morphology": "Barred Spiral Galaxy",
+      "distance": "61 million light years",
+      "description": "NGC 1300 is a barred spiral galaxy noted for its grand-design spiral arms."
+    },
+    {
+      "name": "Cigar Galaxy",
+      "image": "/static/images/galaxy/cigar galaxy.jpg",
+      "designation": "M82, NGC 3034",
+      "morphology": "Starburst Galaxy",
+      "distance": "12 million light years",
+      "description": "The Cigar Galaxy is experiencing intense star formation and emits strong winds of gas."
+    },
+    {
+      "name": "Messier 81",
+      "image": "/static/images/galaxy/Messier_81_galaxy.jpg",
+      "designation": "M81, NGC 3031",
+      "morphology": "Spiral Galaxy",
+      "distance": "12 million light years",
+      "description": "Messier 81 is a spiral galaxy with well-defined arms and a supermassive black hole."
+    },
+    {
+      "name": "NGC 6946",
+      "image": "/static/images/galaxy/NGC 6946_Galaxy.jpg",
+      "designation": "NGC 6946",
+      "morphology": "Intermediate Spiral Galaxy",
+      "distance": "22.5 million light years",
+      "description": "NGC 6946 is known as the Fireworks Galaxy due to its frequent supernovae."
+    },
+    {
+      "name": "NGC 2903",
+      "image": "/static/images/galaxy/NGC_2903_GALAXY.jpg",
+      "designation": "NGC 2903",
+      "morphology": "Barred Spiral Galaxy",
+      "distance": "30 million light years",
+      "description": "NGC 2903 is a barred spiral galaxy with active star-forming regions."
+    },
+    {
+      "name": "NGC 3310",
+      "image": "/static/images/galaxy/NGC_3310 GALAXY.jpg",
+      "designation": "NGC 3310",
+      "morphology": "Starburst Spiral Galaxy",
+      "distance": "50 million light years",
+      "description": "NGC 3310 has undergone a recent collision and is bursting with new stars."
+    },
+    {
+      "name": "NGC 1365",
+      "image": "/static/images/galaxy/NGC 1365 GALAXY.jpg",
+      "designation": "NGC 1365",
+      "morphology": "Barred Spiral Galaxy",
+      "distance": "56 million light years",
+      "description": "NGC 1365 is one of the most spectacular barred spiral galaxies known."
+    },
+    {
+      "name": "Messier 63",
+      "image": "/static/images/galaxy/MESSIER 63 GALAXY.jpg",
+      "designation": "M63, NGC 5055",
+      "morphology": "Spiral Galaxy",
+      "distance": "27 million light years",
+      "description": "Also known as the Sunflower Galaxy, Messier 63 has a bright core and distinctive arms."
+    }
+  ],
+  "planets": [
+    {
+      "name": "Mercury",
+      "image": "/static/images/planets/2k_mercury.jpg",
+      "designation": "1st Planet from the Sun",
+      "morphology": "Terrestrial Planet",
+      "distance": "77 million km (Avg from Earth)",
+      "description": "Mercury is the smallest planet in the Solar System and the closest to the Sun. It has a rocky body with a cratered surface, very similar to Earth's moon."
+    },
+    {
+      "name": "Venus",
+      "image": "/static/images/planets/2k_venus_surface.jpg",
+      "designation": "2nd Planet from the Sun",
+      "morphology": "Terrestrial Planet",
+      "distance": "61 million km (Avg from Earth)",
+      "description": "Venus is the second planet from the Sun. It is a terrestrial planet and is sometimes called Earth's 'sister planet' because of their similar size, mass, and proximity to the Sun. It has a dense, toxic atmosphere."
+    },
+    {
+      "name": "Earth",
+      "image": "/static/images/planets/2k_earth_daymap.jpg",
+      "designation": "3rd Planet from the Sun",
+      "morphology": "Terrestrial Planet",
+      "distance": "0 km (You are here)",
+      "description": "Our home planet is the third planet from the Sun, and the only place we know of so far that's inhabited by living things. It is an ocean planet, with water covering 71% of its surface."
+    },
+    {
+      "name": "Mars",
+      "image": "/static/images/planets/2k_mars.jpg",
+      "designation": "4th Planet from the Sun",
+      "morphology": "Terrestrial Planet",
+      "distance": "225 million km (Avg from Earth)",
+      "description": "Mars is the fourth planet from the Sun. It is a dusty, cold, desert world with a very thin atmosphere. It is known as the 'Red Planet' due to the iron oxide prevalent on its surface."
+    },
+    {
+      "name": "Jupiter",
+      "image": "/static/images/planets/2k_jupiter.jpg",
+      "designation": "5th Planet from the Sun",
+      "morphology": "Gas Giant",
+      "distance": "714 million km (Avg from Earth)",
+      "description": "Jupiter is the largest planet in the solar system - more than twice as massive as all the other planets combined. It is famous for its Great Red Spot, a giant storm bigger than Earth."
+    },
+    {
+      "name": "Saturn",
+      "image": "/static/images/planets/2k_saturn.jpg",
+      "ringImage": "/static/images/planets/2k_saturn_ring_alpha.png",
+      "designation": "6th Planet from the Sun",
+      "morphology": "Gas Giant",
+      "distance": "1.4 billion km (Avg from Earth)",
+      "description": "Saturn is the sixth planet from the Sun and the second-largest in the Solar System. It is adorned with a dazzling, complex system of icy rings."
+    },
+    {
+      "name": "Uranus",
+      "image": "static/images/planets/2k_uranus.jpg",
+      "designation": "7th Planet from the Sun",
+      "morphology": "Ice Giant",
+      "distance": "2.9 billion km (Avg from Earth)",
+      "description": "Uranus is the seventh planet from the Sun. It is an ice giant and has a unique tilt; it rotates on its side, making it appear to roll around the Sun like a barrel."
+    },
+    {
+      "name": "Neptune",
+      "image": "/static/images/planets/2k_neptune.jpg",
+      "designation": "8th Planet from the Sun",
+      "morphology": "Ice Giant",
+      "distance": "4.5 billion km (Avg from Earth)",
+      "description": "Neptune—the eighth and most distant major planet orbiting our Sun—is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations."
+    }
+  ],
+"exoplanets": [
+    {
+      "name": "Proxima Centauri b",
+      "image": "/static/images/exoplanets/proxima centauri b.jpg",
+      "designation": "Proxima b",
+      "morphology": "Super-Earth",
+      "distance": "4.24 light years",
+      "description": "The closest known exoplanet to our Solar System. It orbits within the habitable zone of a red dwarf star, meaning liquid water could theoretically exist on its surface."
+    },
+    {
+      "name": "TRAPPIST-1e",
+      "image": "/static/images/exoplanets/trappist-1e.png",
+      "designation": "2MASS J23062928-0502285 e",
+      "morphology": "Terrestrial (Earth-sized)",
+      "distance": "39.46 light years",
+      "description": "One of seven Earth-sized planets orbiting the ultra-cool dwarf star TRAPPIST-1. It is considered one of the most potentially habitable exoplanets discovered so far."
+    },
+    {
+      "name": "Kepler-186f",
+      "image": "/static/images/exoplanets/kepler186f.jpg",
+      "designation": "KOI-571.05",
+      "morphology": "Earth-sized",
+      "distance": "582 light years",
+      "description": "The first Earth-sized planet discovered in the habitable zone of another star. Because its star is cooler and redder than our Sun, any plant life there might appear red or black."
+    },
+    {
+      "name": "55 Cancri e",
+      "image": "/static/images/exoplanets/55_cancri_e_.png",
+      "designation": "Janssen",
+      "morphology": "Super-Earth",
+      "distance": "41 light years",
+      "description": "A scorching hot 'super-Earth' that orbits its star so closely a year lasts only 18 hours. It is theorized to be covered in oceans of lava and possess a core made of diamond."
+    },
+    {
+      "name": "WASP-12b",
+      "image": "/static/images/exoplanets/wasp12b.png",
+      "designation": "WASP-12b",
+      "morphology": "Hot Jupiter",
+      "distance": "1,410 light years",
+      "description": "A massive gas giant orbiting so close to its parent star that it is literally being torn apart and consumed by the star's gravity, stretching the planet into an egg shape."
+    },
+    {
+      "name": "Kepler-22b",
+      "image": "/static/images/exoplanets/kepler 22b.jpg",
+      "designation": "KOI-87.01",
+      "morphology": "Super-Earth / Mini-Neptune",
+      "distance": "620 light years",
+      "description": "The first planet confirmed by NASA's Kepler mission to orbit within the habitable zone of a Sun-like star. It is likely a 'water world' entirely covered by a global ocean."
+    },
+    {
+      "name": "HD 189733 b",
+      "image": "/static/images/exoplanets/hd189733b.jpg",
+      "designation": "HD 189733 b",
+      "morphology": "Hot Jupiter",
+      "distance": "64.5 light years",
+      "description": "A beautiful deep blue gas giant that hides a deadly secret: its weather includes winds blowing at 5,400 mph and horizontal rain made of jagged silicate glass."
+    },
+    {
+      "name": "PSR B1257+12 B",
+      "image": "/static/images/exoplanets/psr_b1257+12_b.jpg",
+      "designation": "Poltergeist",
+      "morphology": "Pulsar Planet",
+      "distance": "2,300 light years",
+      "description": "One of the very first exoplanets ever discovered. It orbits a pulsar—the rapidly spinning, dead core of an exploded star—making it a highly irradiated, desolate world."
+    }
+  ],
+  "blackHoles": [
+    {
+      "name": "Messier 87*",
+      "image": "/static/images/blackholes/messier 87.jpg",
+      "designation": "M87*",
+      "morphology": "Supermassive Black Hole",
+      "distance": "53.5 million light years",
+      "description": "Famous for being the very first black hole to ever be directly imaged by humanity (using the Event Horizon Telescope in 2019). It weighs 6.5 billion times the mass of our Sun."
+    },
+    {
+      "name": "Sagittarius A*",
+      "image": "/static/images/blackholes/sagittarius a.jpg",
+      "designation": "Sgr A*",
+      "morphology": "Supermassive Black Hole",
+      "distance": "26,673 light years",
+      "description": "The supermassive black hole at the very center of our own Milky Way galaxy. Despite its massive size, it is currently 'quiet' and not consuming large amounts of material."
+    },
+    {
+      "name": "Cygnus X-1",
+      "image": "/static/images/blackholes/cygnus x1.png",
+      "designation": "Cyg X-1",
+      "morphology": "Stellar-Mass Black Hole",
+      "distance": "7,200 light years",
+      "description": "One of the strongest X-ray sources seen from Earth, and the first astronomical object widely accepted to be a black hole. It slowly strips material away from a massive blue companion star."
+    },
+    {
+      "name": "TON 618",
+      "image": "/static/images/blackholes/ton 618.jpg",
+      "designation": "TON 618",
+      "morphology": "Ultramassive Black Hole",
+      "distance": "18.2 billion light years",
+      "description": "One of the most massive black holes ever discovered in the universe, weighing an incomprehensible 66 billion times the mass of our Sun. It powers an incredibly bright quasar."
+    },
+    {
+      "name": "Gaia BH1",
+      "image": "/static/images/blackholes/gaia_bh1_.jpg",
+      "designation": "Gaia DR3 4373465352415301632",
+      "morphology": "Stellar-Mass Black Hole",
+      "distance": "1,560 light years",
+      "description": "Currently the closest known black hole to Earth. It is a dormant black hole, meaning it is not actively feeding on its companion star, making it very difficult to detect."
+    },
+    {
+      "name": "V404 Cygni",
+      "image": "/static/images/blackholes/v404 cygni.jpg",
+      "designation": "V404 Cyg",
+      "morphology": "Microquasar",
+      "distance": "7,800 light years",
+      "description": "A stellar-mass black hole known for unpredictable and dramatic outbursts of energy. It occasionally produces jets of particles moving at near light-speed."
+    },
+    {
+      "name": "Holmberg 15A",
+      "image": "/static/images/blackholes/holmberg_15a_.jpg",
+      "designation": "Holm 15A",
+      "morphology": "Ultramassive Black Hole",
+      "distance": "700 million light years",
+      "description": "Located in the center of the Abell 85 galaxy cluster, it is one of the largest black holes ever measured dynamically, with a mass roughly 40 billion times that of the Sun."
+    },
+    {
+      "name": "J0313-1806",
+      "image": "/static/images/blackholes/QSO J0313-1806.png",
+      "designation": "J0313-1806",
+      "morphology": "Supermassive Black Hole",
+      "distance": "13.03 billion light years",
+      "description": "The most distant known quasar. Because it is so far away, we see it as it existed just 670 million years after the Big Bang, challenging our understanding of how quickly black holes can grow."
+    }
+  ]
+}

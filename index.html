@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Astrosphere - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <nav class="sidebar close">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img src="/static/space.png" alt="Logo" class="custom-icon logo-icon-img">
+        </span>
+        <div class="text logo-text">
+          <span class="name">The Astrosphere</span>
+        </div>
+      </div>
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="index.html">
+              <img src="/static/home.png" alt="Home" class="custom-icon">
+              <span class="text nav-text">Home</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="planets.html">
+              <img src="/static/planet.png" alt="Planets" class="custom-icon">
+              <span class="text nav-text">Planets</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="galaxies.html">
+              <img src="/static/galaxy.png" alt="Galaxies" class="custom-icon">
+              <span class="text nav-text">Galaxies</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="exo.html">
+              <img src="/static/exoplanet.png" alt="Exoplanets" class="custom-icon">
+              <span class="text nav-text">Exoplanets</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="blackholes.html">
+              <img src="/static/blackhole.png" alt="Black Holes" class="custom-icon">
+              <span class="text nav-text">Black Holes</span>
+            </a>
+          </li>
+          <li class="nav-link">
+          <a href="quiz.html">
+            <img src="/static/quiz.png" alt="Quiz" class="custom-icon">
+            <span class="text nav-text">Test My Skills</span>
+          </a>
+        </li>
+        <li class="nav-link">
+            <a href="system.html">
+              <img src="/static/solar-system.png" alt="Solar System" class="custom-icon">
+              <span class="text nav-text">3D Solar System</span>
+            </a>
+          </li>
+        <li class="nav-link">
+            <a href="galaxy3d.html">
+              <img src="/static/galaxies.png" alt="Solar System" class="custom-icon">
+              <span class="text nav-text">3D Galaxies</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <canvas id="starfield"></canvas>
+
+  <section id="welcome-screen" class="page active">
+    <h1 class="main-title">The Astrosphere</h1>
+    <p class="description">
+      Welcome to <strong>The Astrosphere</strong>. Dive into the cosmos and discover the wonders of the universe. Choose a category below to start your journey through space.
+    </p>
+    
+    <h2 class="section-subtitle" style="margin-top: 40px; color: #ffcc00; text-shadow: 0 0 10px rgba(255, 204, 0, 0.4);">
+      <i class='bx bx-cube-alt'></i> Immersive 3D Simulations
+    </h2>
+    <div class="nav-buttons" style="margin-bottom: 30px;">
+      <a href="system.html">
+        <button style="border: 1px solid #ffcc00; box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);">
+          <i class='bx bx-planet'></i> 3D Solar System
+        </button>
+      </a>
+      <a href="galaxy3d.html">
+        <button style="border: 1px solid #ffcc00; box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);">
+          <i class='bx bx-shape-polygon'></i> 3D Universe
+        </button>
+      </a>
+      
+    </div>
+
+    <h2 class="section-subtitle" style="color: #96d1ff;">
+      <i class='bx bx-data'></i> The Cosmic Database
+    </h2>
+    <div class="nav-buttons" style="margin-bottom: 30px;">
+      <a href="planets.html"><button> Planets</button></a>
+      <a href="galaxies.html"><button>Galaxies</button></a>
+      <a href="exo.html"><button>Exoplanets</button></a>
+      <a href="blackholes.html"><button>Black Holes</button></a>
+    </div>
+
+    
+    </div>
+  </section>
+  
+  <footer class="site-footer">
+    <p>CREATED BY AV ASTROSPHERE 26</p>
+  </footer>
+
+  <div id="roaming-rocket">🚀</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

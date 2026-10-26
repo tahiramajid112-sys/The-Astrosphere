@@ -2,7 +2,7 @@
   "galaxies": [
     {
       "name": "Andromeda Galaxy",
-      "image": "/static/images/galaxy/andromeda_galaxy.png",
+      "image": "./static/images/galaxy/andromeda_galaxy.png",
       "designation": "M31, NGC 224",
       "morphology": "Spiral Galaxy",
       "distance": "2.537 million light years",
@@ -10,7 +10,7 @@
     },
     {
       "name": "Sombrero Galaxy",
-      "image": "/static/images/galaxy/Sombrero_Galaxy_.jpg",
+      "image": "./static/images/galaxy/Sombrero_Galaxy_.jpg",
       "designation": "M104, NGC 4594",
       "morphology": "Unbarred Spiral Galaxy",
       "distance": "31 million light years",
@@ -18,7 +18,7 @@
     },
     {
       "name": "Whirlpool Galaxy",
-      "image": "/static/images/galaxy/whirpool galaxy.jpg",
+      "image": "./static/images/galaxy/whirpool galaxy.jpg",
       "designation": "M51A, NGC 5194",
       "morphology": "Spiral Galaxy",
       "distance": "23 million light years",
@@ -26,7 +26,7 @@
     },
     {
       "name": "Pinwheel Galaxy",
-      "image": "/static/images/galaxy/pinwheel galaxy.jpg",
+      "image": "./static/images/galaxy/pinwheel galaxy.jpg",
       "designation": "M101, NGC 5457",
       "morphology": "Face-on Spiral Galaxy",
       "distance": "21 million light years",
@@ -34,7 +34,7 @@
     },
     {
       "name": "Centaurus A",
-      "image": "/static/images/galaxy/centaurus a galaxy.jpg",
+      "image": "./static/images/galaxy/centaurus a galaxy.jpg",
       "designation": "NGC 5128",
       "morphology": "Lenticular Galaxy",
       "distance": "12 million light years",
@@ -42,7 +42,7 @@
     },
     {
       "name": "Tadpole Galaxy",
-      "image": "/static/images/galaxy/tadpole galaxy.jpg",
+      "image": "./static/images/galaxy/tadpole galaxy.jpg",
       "designation": "UGC 10214",
       "morphology": "Peculiar Galaxy",
       "distance": "400 million light years",
@@ -50,7 +50,7 @@
     },
     {
       "name": "Messier 87",
-      "image": "/static/images/galaxy/messier_87_galaxy.jpg",
+      "image": "./static/images/galaxy/messier_87_galaxy.jpg",
       "designation": "M87, NGC 4486",
       "morphology": "Elliptical Galaxy",
       "distance": "53.5 million light years",
@@ -58,7 +58,7 @@
     },
     {
       "name": "NGC 1300",
-      "image": "/static/images/galaxy/ngc 1300 galaxy.jpg",
+      "image": "./static/images/galaxy/ngc 1300 galaxy.jpg",
       "designation": "NGC 1300",
       "morphology": "Barred Spiral Galaxy",
       "distance": "61 million light years",
@@ -66,7 +66,7 @@
     },
     {
       "name": "Cigar Galaxy",
-      "image": "/static/images/galaxy/cigar galaxy.jpg",
+      "image": "./static/images/galaxy/cigar galaxy.jpg",
       "designation": "M82, NGC 3034",
       "morphology": "Starburst Galaxy",
       "distance": "12 million light years",
@@ -74,7 +74,7 @@
     },
     {
       "name": "Messier 81",
-      "image": "/static/images/galaxy/Messier_81_galaxy.jpg",
+      "image": "./static/images/galaxy/Messier_81_galaxy.jpg",
       "designation": "M81, NGC 3031",
       "morphology": "Spiral Galaxy",
       "distance": "12 million light years",
@@ -82,7 +82,7 @@
     },
     {
       "name": "NGC 6946",
-      "image": "/static/images/galaxy/NGC 6946_Galaxy.jpg",
+      "image": "./static/images/galaxy/NGC 6946_Galaxy.jpg",
       "designation": "NGC 6946",
       "morphology": "Intermediate Spiral Galaxy",
       "distance": "22.5 million light years",
@@ -90,7 +90,7 @@
     },
     {
       "name": "NGC 2903",
-      "image": "/static/images/galaxy/NGC_2903_GALAXY.jpg",
+      "image": "./static/images/galaxy/NGC_2903_GALAXY.jpg",
       "designation": "NGC 2903",
       "morphology": "Barred Spiral Galaxy",
       "distance": "30 million light years",
@@ -98,7 +98,7 @@
     },
     {
       "name": "NGC 3310",
-      "image": "/static/images/galaxy/NGC_3310 GALAXY.jpg",
+      "image": "./static/images/galaxy/NGC_3310 GALAXY.jpg",
       "designation": "NGC 3310",
       "morphology": "Starburst Spiral Galaxy",
       "distance": "50 million light years",
@@ -106,7 +106,7 @@
     },
     {
       "name": "NGC 1365",
-      "image": "/static/images/galaxy/NGC 1365 GALAXY.jpg",
+      "image": "./static/images/galaxy/NGC 1365 GALAXY.jpg",
       "designation": "NGC 1365",
       "morphology": "Barred Spiral Galaxy",
       "distance": "56 million light years",
@@ -114,7 +114,7 @@
     },
     {
       "name": "Messier 63",
-      "image": "/static/images/galaxy/MESSIER 63 GALAXY.jpg",
+      "image": "./static/images/galaxy/MESSIER 63 GALAXY.jpg",
       "designation": "M63, NGC 5055",
       "morphology": "Spiral Galaxy",
       "distance": "27 million light years",
@@ -124,7 +124,7 @@
   "planets": [
     {
       "name": "Mercury",
-      "image": "/static/images/planets/2k_mercury.jpg",
+      "image": "./static/images/planets/2k_mercury.jpg",
       "designation": "1st Planet from the Sun",
       "morphology": "Terrestrial Planet",
       "distance": "77 million km (Avg from Earth)",
@@ -132,7 +132,7 @@
     },
     {
       "name": "Venus",
-      "image": "/static/images/planets/2k_venus_surface.jpg",
+      "image": "./static/images/planets/2k_venus_surface.jpg",
       "designation": "2nd Planet from the Sun",
       "morphology": "Terrestrial Planet",
       "distance": "61 million km (Avg from Earth)",
@@ -140,7 +140,7 @@
     },
     {
       "name": "Earth",
-      "image": "/static/images/planets/2k_earth_daymap.jpg",
+      "image": "./static/images/planets/2k_earth_daymap.jpg",
       "designation": "3rd Planet from the Sun",
       "morphology": "Terrestrial Planet",
       "distance": "0 km (You are here)",
@@ -148,7 +148,7 @@
     },
     {
       "name": "Mars",
-      "image": "/static/images/planets/2k_mars.jpg",
+      "image": "./static/images/planets/2k_mars.jpg",
       "designation": "4th Planet from the Sun",
       "morphology": "Terrestrial Planet",
       "distance": "225 million km (Avg from Earth)",
@@ -156,7 +156,7 @@
     },
     {
       "name": "Jupiter",
-      "image": "/static/images/planets/2k_jupiter.jpg",
+      "image": "./static/images/planets/2k_jupiter.jpg",
       "designation": "5th Planet from the Sun",
       "morphology": "Gas Giant",
       "distance": "714 million km (Avg from Earth)",
@@ -164,8 +164,8 @@
     },
     {
       "name": "Saturn",
-      "image": "/static/images/planets/2k_saturn.jpg",
-      "ringImage": "/static/images/planets/2k_saturn_ring_alpha.png",
+      "image": "./static/images/planets/2k_saturn.jpg",
+      "ringImage": "./static/images/planets/2k_saturn_ring_alpha.png",
       "designation": "6th Planet from the Sun",
       "morphology": "Gas Giant",
       "distance": "1.4 billion km (Avg from Earth)",
@@ -173,7 +173,7 @@
     },
     {
       "name": "Uranus",
-      "image": "static/images/planets/2k_uranus.jpg",
+      "image": "./static/images/planets/2k_uranus.jpg",
       "designation": "7th Planet from the Sun",
       "morphology": "Ice Giant",
       "distance": "2.9 billion km (Avg from Earth)",
@@ -181,7 +181,7 @@
     },
     {
       "name": "Neptune",
-      "image": "/static/images/planets/2k_neptune.jpg",
+      "image": "./static/images/planets/2k_neptune.jpg",
       "designation": "8th Planet from the Sun",
       "morphology": "Ice Giant",
       "distance": "4.5 billion km (Avg from Earth)",
@@ -191,7 +191,7 @@
 "exoplanets": [
     {
       "name": "Proxima Centauri b",
-      "image": "/static/images/exoplanets/proxima centauri b.jpg",
+      "image": "./static/images/exoplanets/proxima centauri b.jpg",
       "designation": "Proxima b",
       "morphology": "Super-Earth",
       "distance": "4.24 light years",
@@ -199,7 +199,7 @@
     },
     {
       "name": "TRAPPIST-1e",
-      "image": "/static/images/exoplanets/trappist-1e.png",
+      "image": "./static/images/exoplanets/trappist-1e.png",
       "designation": "2MASS J23062928-0502285 e",
       "morphology": "Terrestrial (Earth-sized)",
       "distance": "39.46 light years",
@@ -207,7 +207,7 @@
     },
     {
       "name": "Kepler-186f",
-      "image": "/static/images/exoplanets/kepler186f.jpg",
+      "image": "./static/images/exoplanets/kepler186f.jpg",
       "designation": "KOI-571.05",
       "morphology": "Earth-sized",
       "distance": "582 light years",
@@ -215,7 +215,7 @@
     },
     {
       "name": "55 Cancri e",
-      "image": "/static/images/exoplanets/55_cancri_e_.png",
+      "image": "./static/images/exoplanets/55_cancri_e_.png",
       "designation": "Janssen",
       "morphology": "Super-Earth",
       "distance": "41 light years",
@@ -223,7 +223,7 @@
     },
     {
       "name": "WASP-12b",
-      "image": "/static/images/exoplanets/wasp12b.png",
+      "image": "./static/images/exoplanets/wasp12b.png",
       "designation": "WASP-12b",
       "morphology": "Hot Jupiter",
       "distance": "1,410 light years",
@@ -231,7 +231,7 @@
     },
     {
       "name": "Kepler-22b",
-      "image": "/static/images/exoplanets/kepler 22b.jpg",
+      "image": "./static/images/exoplanets/kepler 22b.jpg",
       "designation": "KOI-87.01",
       "morphology": "Super-Earth / Mini-Neptune",
       "distance": "620 light years",
@@ -239,7 +239,7 @@
     },
     {
       "name": "HD 189733 b",
-      "image": "/static/images/exoplanets/hd189733b.jpg",
+      "image": "./static/images/exoplanets/hd189733b.jpg",
       "designation": "HD 189733 b",
       "morphology": "Hot Jupiter",
       "distance": "64.5 light years",
@@ -247,7 +247,7 @@
     },
     {
       "name": "PSR B1257+12 B",
-      "image": "/static/images/exoplanets/psr_b1257+12_b.jpg",
+      "image": "./static/images/exoplanets/psr_b1257+12_b.jpg",
       "designation": "Poltergeist",
       "morphology": "Pulsar Planet",
       "distance": "2,300 light years",
@@ -257,7 +257,7 @@
   "blackHoles": [
     {
       "name": "Messier 87*",
-      "image": "/static/images/blackholes/messier 87.jpg",
+      "image": "./static/images/blackholes/messier 87.jpg",
       "designation": "M87*",
       "morphology": "Supermassive Black Hole",
       "distance": "53.5 million light years",
@@ -265,7 +265,7 @@
     },
     {
       "name": "Sagittarius A*",
-      "image": "/static/images/blackholes/sagittarius a.jpg",
+      "image": "./static/images/blackholes/sagittarius a.jpg",
       "designation": "Sgr A*",
       "morphology": "Supermassive Black Hole",
       "distance": "26,673 light years",
@@ -273,7 +273,7 @@
     },
     {
       "name": "Cygnus X-1",
-      "image": "/static/images/blackholes/cygnus x1.png",
+      "image": "./static/images/blackholes/cygnus x1.png",
       "designation": "Cyg X-1",
       "morphology": "Stellar-Mass Black Hole",
       "distance": "7,200 light years",
@@ -281,7 +281,7 @@
     },
     {
       "name": "TON 618",
-      "image": "/static/images/blackholes/ton 618.jpg",
+      "image": "./static/images/blackholes/ton 618.jpg",
       "designation": "TON 618",
       "morphology": "Ultramassive Black Hole",
       "distance": "18.2 billion light years",
@@ -289,7 +289,7 @@
     },
     {
       "name": "Gaia BH1",
-      "image": "/static/images/blackholes/gaia_bh1_.jpg",
+      "image": "./static/images/blackholes/gaia_bh1_.jpg",
       "designation": "Gaia DR3 4373465352415301632",
       "morphology": "Stellar-Mass Black Hole",
       "distance": "1,560 light years",
@@ -297,7 +297,7 @@
     },
     {
       "name": "V404 Cygni",
-      "image": "/static/images/blackholes/v404 cygni.jpg",
+      "image": "./static/images/blackholes/v404 cygni.jpg",
       "designation": "V404 Cyg",
       "morphology": "Microquasar",
       "distance": "7,800 light years",
@@ -305,7 +305,7 @@
     },
     {
       "name": "Holmberg 15A",
-      "image": "/static/images/blackholes/holmberg_15a_.jpg",
+      "image": "./static/images/blackholes/holmberg_15a_.jpg",
       "designation": "Holm 15A",
       "morphology": "Ultramassive Black Hole",
       "distance": "700 million light years",
@@ -313,7 +313,7 @@
     },
     {
       "name": "J0313-1806",
-      "image": "/static/images/blackholes/QSO J0313-1806.png",
+      "image": "./static/images/blackholes/QSO J0313-1806.png",
       "designation": "J0313-1806",
       "morphology": "Supermassive Black Hole",
       "distance": "13.03 billion light years",
